@@ -145,12 +145,19 @@ html, body {
 
 .slidetounlock {
   width: 80%;
-  height: 60px;
-  background-image: url('track.png');
+  padding: 4px 3px;
+  background: #000000;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(28, 28, 28, 1) 100%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   align-items: center;
   display: flex;
+  border-radius: 12px;
+}
+
+.slidetounlock p {
+  margin-left: 20px;
+  font-size: 25px;
 }
 
 .leftstatus, .clockstatus, .rightstatus {
