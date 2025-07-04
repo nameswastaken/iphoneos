@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHIT</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<img id="device" src="iPhone2G.svg">
+  <div id="device-frame">
+    <div id="lockscreen">
+        <div class="statusbar">
+    <span class="leftstatus">No Service</span>
+    <span class="clockstatus"><img src="lock.png"/></span>
+      <span class="rightstatus">&nbsp;</span>
+    </div>
+    <div class="lockClock">
+    <span id="time">9:41</span>
+    <span id="calendar">Monday, January 1</span>
+      </div>
+          <div class="UnlockDiv">
+          <div class="slidetounlock">
+            <img src="thumb.png">
+          </div>
+      </div>
+    </div>
+
+    <div class="apps-container">
+      <div class="sms-app hidden">slay</div> <!--what-->
+      <div class="phone hidden">phone</div>
+      <div class="mail hidden">mail</div>
+      <div class="safari hidden">safari</div>
+      <div class="ipod hidden">ipod</div>
+    </div>
+
+    <div id="homescreen" class="hidden">
+      <div class="statusbar">
+        <span class="leftstatus">No Service</span>
+        <span class="clockstatus">9:41 AM</span>
+        <span class="rightstatus">&nbsp;</span>
+      </div>
+      <div class="apps">
+        <div class="iconsms" onclick="openApp('sms-app')"><span class="docktext">Text</span></div>
+        <div class="iconcal"><span class="docktext">Calendar</span></div>
+        <div class="iconphotos"><span class="docktext">Photos</span></div>
+        <div class="iconcamera"><span class="docktext">Camera</span></div>
+        <div class="iconyt"><span class="docktext">YouTube</span></div>
+        <div class="iconstocks"><span class="docktext">Stocks</span></div>
+        <div class="iconmaps"><span class="docktext">Maps</span></div>
+        <div class="iconweather"><span class="docktext">Weather</span></div>
+        <div class="iconclock"><span class="docktext">Clock</span></div>
+        <div class="iconcalc"><span class="docktext">Calculator</span></div>
+        <div class="iconnotes"><span class="docktext">Notes</span></div>
+        <div class="iconsettings"><span class="docktext">Settings</span></div>
+      </div>
+      <div class="dock">
+        <div class="iconphone" onclick="openApp('phone')"><span class="docktext">Phone</span></div>
+        <div class="iconmail" onclick="openApp('mail')"><span class="docktext">Mail</span></div>
+        <div class="iconsafari" onclick="openApp('safari')"><span class="docktext">Safari</span></div>
+        <div class="iconipod" onclick="openApp('ipod')"><span class="docktext">iPod</span></div>
+      </div>
+      <div class="app" id="safari">
+        <div class="app-header">Safari <button onclick="closeApp('safari')">X</button></div>
+        <iframe src="https://example.com" class="app-body"></iframe>
+      </div>
+      <div class="app" id="notes">
+        <div class="app-header">Notes <button onclick="closeApp('notes')">X</button></div>
+        <textarea class="app-body" placeholder="Write something..."></textarea>
+      </div>
+      <div class="app" id="settings">
+        <div class="app-header">Settings <button onclick="closeApp('settings')">X</button></div>
+        <div class="app-body">No settings available yet.</div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

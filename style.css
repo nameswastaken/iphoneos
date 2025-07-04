@@ -1,0 +1,318 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('Helvetica.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Helvetica', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #000;
+  color: white;
+  overflow: hidden;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#device-frame {
+  width: 320px;
+  height: 480px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  border: 2px solid #000;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+}
+
+#device {
+    position: fixed;
+    width: 390px;
+    height: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+#lockscreen {
+  height: 100%;
+  background: url('earth.png') no-repeat center center;
+  background-size: cover;
+}
+
+#homescreen {
+  position: relative;
+  height: 100%;
+  background: #000000;
+  background-size: cover;
+}
+
+.dock {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: url('Dock.png') no-repeat center center;
+  background-size: cover;
+    padding-bottom: 25px;
+}
+
+.dock div {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 9px;
+}
+
+.docktext {
+    margin-top: 93px;
+}
+
+.statusbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #000000;
+}
+
+.lockClock {
+  background-image: url('lockTexture.png');
+  width: 100%;
+  height: 96px;
+  position: absolute;
+  top: 23px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lockClock h1, .lockClock p {
+  text-align: center;
+  margin: 0;
+  padding: 1px 0;
+}
+
+#time {
+  font-size: 56px;
+}
+
+#calendar {
+    font-size: 18px;
+}
+
+.UnlockDiv {
+  background-image: url('lockTexture.png');
+  width: 100%;
+  height: 96px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.UnlockDiv p {
+  text-align: center;
+  margin: 0;
+  padding: 1px 0;
+}
+
+.slidetounlock {
+  width: 80%;
+  height: 60px;
+  background-image: url('track.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  align-items: center;
+  display: flex;
+}
+
+.leftstatus, .clockstatus, .rightstatus {
+  flex: 1;
+  text-align: center;
+  filter: brightness(800%);
+}
+
+.leftstatus {
+  text-align: left;
+}
+
+.rightstatus {
+  text-align: right;
+}
+
+.clockstatus img {
+  width: 30px !important;
+  height: auto !important;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: black;
+  display: none;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: #ddd;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.app-body {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: 1rem;
+}
+
+.iconsafari {
+  background-image: url('icons/Safari.png');
+  background-size: cover;
+}
+
+.iconphone {
+  background-image: url('icons/Phone.png');
+  background-size: cover;
+}
+
+.iconmail {
+  background-image: url('icons/Mail.png');
+  background-size: cover;
+}
+
+.iconipod {
+  background-image: url('icons/iPod.png');
+  background-size: cover;
+}
+
+.iconnotes {
+  background-image: url('icons/Notes.png');
+  background-size: cover;
+}
+
+.iconsettings {
+  background-image: url('icons/Settings.png');
+  background-size: cover;
+}
+
+.iconsms {
+  background-image: url('icons/Text.png');
+  background-size: cover;
+}
+
+.iconcal {
+  background-image: url('icons/Calendar.png');
+  background-size: cover;
+}
+
+.iconphotos {
+  background-image: url('icons/Photos.png');
+  background-size: cover;
+}
+
+.iconcamera {
+  background-image: url('icons/Camera.png');
+  background-size: cover;
+}
+
+.iconyt {
+  background-image: url('icons/YouTube.png');
+  background-size: cover;
+}
+
+.iconstocks {
+  background-image: url('icons/Stocks.png');
+  background-size: cover;
+}
+
+.iconmaps {
+  background-image: url('icons/Maps.png');
+  background-size: cover;
+}
+
+.iconweather {
+  background-image: url('icons/Weather.png');
+  background-size: cover;
+}
+
+.iconclock {
+  background-image: url('icons/Clock.png');
+  background-size: cover;
+}
+
+.iconcalc {
+  background-image: url('icons/Calculator.png');
+  background-size: cover;
+}
+
+.apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.apps div {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 9px;
+  margin-bottom: 15px;
+}
+
+.apps-container {
+  display: none;
+  position: relative;
+  height: 100%;
+}
+
+.apps-container div {
+  position: relative;
+  height: 100%;
+  background-size: cover;
+}
+
